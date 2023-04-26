@@ -17,7 +17,8 @@ jobs:
           cat metrics.txt >> report.md
 
           echo "## Data viz" >> report.md
-          echo '![](./feature_importance.png "feature_importance")' >> report.md
-          echo '![](./residuals.png "residuals")' >> report.md
+          echo "![](./feature_importance.png)" >> report.md
+          echo "![](./residuals.png)" >> report.md
+          cml comment create report.md
           cml comment create report.md
           
